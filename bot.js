@@ -9,6 +9,9 @@ client.on('ready', () => {
 
 
     
+ 
+
+    
  client.on('ready', function(){    
     var ms = 40000 ;    
     var setGame = ['Fhelp|لبيك الله هم لبيك'];    
@@ -22,11 +25,10 @@ j = 1;
             j = -1;    
       }    
        i = i+j;    
+        client.user.setGame(setGame[i],`http://www.youtube.com/gg`);    
 }, ms);    
     
 });   
-
-
 
 
 
