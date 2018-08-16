@@ -12,7 +12,7 @@ client.on('ready', () => {
  
 
 client.on('ready', () => {
-client.user.setGame(`Fhelp|لبيك الله هم لبيك|FOFO BOT`,'https://www.twitch.tv/v5bz');
+client.user.setGame(`Fhelp|لبيك الله هم لبيك|FOFO🔱`,'https://www.twitch.tv/v5bz');
 });
 
 
@@ -178,19 +178,21 @@ client.on("message", message => {
  if (message.content === "Fhelp") {
   const embed = new Discord.RichEmbed()
       .setColor("RANDOM")
-      .setDescription(`😊أوامر حسابي😊
+      .setDescription(`😊🔱أوامر حسابي🔱😊
 ─════════════ {✯FOFO✯} ════════════─
-❧ Fid ➺لتشوف ملفك الشخصي
-❧ Favatar ➺لتشوف صورتك
-❧ Fbans ➺لتشوف عدد الأشخاص المبندين بلسيرفر
-❧ Fimage ➺لعرض صورة السيرفر
-❧ Fping ➺لتشوف بينق حسابي
-❧ Fuserinfo ➺ملفك شخصي
-❧ Froles ➺لمعرفة كل رتب الموجودة بسيرفر
-❧ Fslots ➺لعبة الإموجي
-❧ Fserver ➺لتعرف معلومات السيرفر
-❧ Fmembers ➺لمعرفت كم شخص أون لاين والأشخاص الأوف لاين
-❧ Faccount ➺لتشوف معلومات حسابي
+|❧-Fid ➺😁تشوف ملفك الشخصي
+|❧-Favatar ➺📷لتشوف صورتك
+|❧ Fbans ➺🚹لتشوف عدد الأشخاص المبندين بلسيرفر
+|❧-Fimage ➺❇لعرض صورة السيرفر
+|❧-Fping ➺😉لتشوف بينق حسابي
+|❧-Fuserinfo ➺🔱ملفك شخصي
+|❧-Froles ➺☺لمعرفة كل رتب الموجودة بسيرفر
+|❧-Fslots ➺🍒لعبة الإموجي
+|❧-Fserver ➺🚩لتعرف معلومات السيرفر
+|❧-Fmembers ➺➿لمعرفت كم شخص أون لاين والأشخاص الأوف لاين
+|❧-Fcal ➺❓آلة حاسبة للجمع وللطرح وللضرب وللقصمة
+|❧-Faccount ➺ℹلتشوف معلومات حسابي
+😊أنا مني بوت أن شخص عادي بس مركب اوامر وشكراا لكم😉
 ─════════════ {✯FOFO✯} ════════════─
       `)
    message.channel.sendEmbed(embed)
@@ -337,7 +339,38 @@ if(message.content.startsWith(prefix+"userinfo")) {
  });
 
 
+client.on('ready', () => {
+  console.log(`AutoRole Code Started By Friends Team`);
+    client.user.setStatus("dnd")
+});
 
+
+  const math = require('math-expression-evaluator');
+const stripIndents = require('common-tags').stripIndents;
+
+client.on('message', msg => {
+if (msg.content.startsWith(prefix + 'cal')) {
+  let args = msg.content.split(" ").slice(1);
+      const question = args.join(' ');
+  if (args.length < 1) {
+      msg.reply('**📏أكتب رقم يلا أقلك دغري جواب أنا ذكي😉**.');
+} else {    let answer;
+  try {
+      answer = math.eval(question);
+  } catch (err) {
+      return msg.reply(`Error: ${err}`);
+  }
+
+  const embed = new Discord.RichEmbed()
+  .setThumbnail('https://banner2.kisspng.com/20180215/ade/kisspng-office-supplies-animation-calculator-5a85e764e3aa68.4914103215187249649325.jpg')
+.setDescription(`**
+ السؤال يقولك :thinking:  : ${question}
+ طبعا الاجابة :writing_hand: : ${answer}**
+`)
+  msg.channel.send(embed)
+  }
+};
+});
 
 
 client.login(process.env.BOT_TOKEN);
