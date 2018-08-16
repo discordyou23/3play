@@ -12,7 +12,7 @@ client.on('ready', () => {
  
 
 client.on('ready', () => {
-client.user.setGame(`Fhelp`);
+client.user.setGame(`Fhelp|لبيك الله هم لبيك|FOFO BOT`,'https://www.twitch.tv/v5bz');
 });
 
 
