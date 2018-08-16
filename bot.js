@@ -113,29 +113,7 @@ client.on('message', msg => {
   });
 
 
-  client.on('message', message => {
-      if (message.content.startsWith(prefix + 'clear')) {
-        if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`You Don't Have [*MANAGE_MESSAGES*] Permission `).catch(console.error);
-    message.delete()
-    if(!message.channel.guild) return;
-let args = message.content.split(" ").slice(1);
 
-  const messagecount = parseInt(args.join(' '));
-
-  message.channel.fetchMessages({
-
-    limit: messagecount
-
-}).then(messages => message.channel.bulkDelete(messages));
-
-   var embed = new Discord.RichEmbed()
-        .setTitle('تم مسح الشات بنجاح|✅')
-        .setColor('RED')
-       message.channel.sendEmbed(embed)
-
-};
-
-});
 
 
   client.on('message', message => {
@@ -176,7 +154,7 @@ client.on("message", message => {
 ❧ Fbans ➺لتشوف عدد الأشخاص المبندين بلسيرفر
 ❧ Fimage ➺لعرض صورة السيرفر
 ❧ Fping ➺لتشوف بينق حسابي
-❧ Fclear ➺لمسح الشات 
+❧ Fuserinfo ➺ملفك شخصي
 ❧ Faccount ➺لتشوف معلومات حسابي
 ─════════════ {✯FOFO✯} ════════════─
       `)
@@ -184,6 +162,56 @@ client.on("message", message => {
 
    }
    });
+
+
+client.on('message' , message => {
+    var prefix = "F";
+if(message.content.startsWith(prefix+"userinfo")) {
+    let user = message.mentions.users.first() || message.author;
+    const joineddiscord = (user.createdAt.getDate() + 1) + '-' + (user.createdAt.getMonth() + 1) + '-' + user.createdAt.getFullYear() + ' | ' + user.createdAt.getHours() + ':' + user.createdAt.getMinutes() + ':' + user.createdAt.getSeconds();
+    message.delete();
+    let game;
+    if (user.presence.game === null) {
+        game = 'لا يلعب حاليا.';
+    } else {
+        game = user.presence.game.name;
+    }
+    let messag;
+    if (user.lastMessage === null) {
+        messag = 'لم يرسل رسالة. ';
+    } else {
+        messag = user.lastMessage;
+    }
+    let status;
+    if (user.presence.status === 'online') {
+        status = ':green_heart:';
+    } else if (user.presence.status === 'dnd') {
+        status = ':heart:';
+    } else if (user.presence.status === 'idle') {
+        status = ':yellow_heart:';
+    } else if (user.presence.status === 'offline') {
+        status = ':black_heart:';
+    }
+    if (user.presence.status === 'offline') {
+        stat = 0x000000;
+    } else if (user.presence.status === 'online') {
+        stat = 0x00AA4C;
+    } else if (user.presence.status === 'dnd') {
+        stat = 0x9C0000;
+    } else if (user.presence.status === 'idle') {
+        stat = 0xF7C035;
+    }
+    const embed = new Discord.RichEmbed()
+  .addField('**UserInfo:**', `**name:** ${user.username}#${user.discriminator}\n**JoinedDiscord:** ${joineddiscord}\n**LastMessage:** ${messag}\n**Playing:** ${game}\n**Status:** ${status}\n**Bot?** ${user.bot}`, true)
+  .setThumbnail(user.displayAvatarURL)
+  .addField(`Roles:`, message.guild.members.get(user.id).roles.array(role => role.name).slice(1).join(', '))
+  .addField('DiscordInfo:', `**Discriminator:** #${user.discriminator}\n**ID:** ${user.id}\n**Username:** ${user.username}`)
+  .setAuthor(`معلومات ${user.username}`, user.displayAvatarURL)
+  .setColor(stat);
+    message.channel.send({embed})
+  .catch(e => logger.error(e));
+}
+ });
 
 
 
