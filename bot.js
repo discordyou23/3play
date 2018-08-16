@@ -12,7 +12,7 @@ client.on('ready', () => {
  
 
 client.on('ready', () => {
-client.user.setGame(`Fhelp|لبيك الله هم لبيك|FOFO🔱`);
+client.user.setGame(`Fhelp|لبيك الله هم لبيك|FOFO🔱`,'https://www.twitsh.tv/fofodiscord');
 });
 
 
