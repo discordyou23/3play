@@ -124,6 +124,28 @@ client.on('message', msg => {
 
 
 
+  client.on('message', message => {
+if(message.content.startsWith("Fslots")) {
+  let slot1 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
+  let slot2 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
+  let slot3 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
+  let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+  let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+  let slots3 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
+  let we;
+  if(slots1 === slots2 && slots2 === slots3) {
+    we = "😀لقد ربحت يا بطل😀"
+  } else {
+    we = "😣لقد خسرت حظ آوفر😣"
+  }
+  message.channel.send(`${slots1} | ${slots2} | ${slots3} - ${we}`)
+}
+});
+
+
+
+
+
 
   client.on('message', message => {
      if(message.content.startsWith(prefix +"bans")) {
@@ -164,6 +186,10 @@ client.on("message", message => {
 ❧ Fimage ➺لعرض صورة السيرفر
 ❧ Fping ➺لتشوف بينق حسابي
 ❧ Fuserinfo ➺ملفك شخصي
+❧ Froles ➺لمعرفة كل رتب الموجودة بسيرفر
+❧ Fslots ➺لعبة الإموجي
+❧ Fserver ➺لتعرف معلومات السيرفر
+❧ Fmembers ➺لمعرفت كم شخص أون لاين والأشخاص الأوف لاين
 ❧ Faccount ➺لتشوف معلومات حسابي
 ─════════════ {✯FOFO✯} ════════════─
       `)
@@ -171,6 +197,94 @@ client.on("message", message => {
 
    }
    });
+
+
+
+
+
+
+
+
+  client.on('message', message => {
+    if(message.content == 'Fmembers') {
+    const embed = new Discord.RichEmbed()
+    .setDescription(`**Members info🔋
+:green_heart: online:   ${message.guild.members.filter(m=>m.presence.status == 'online').size}
+:heart:dnd:       ${message.guild.members.filter(m=>m.presence.status == 'dnd').size}
+:yellow_heart: idle:      ${message.guild.members.filter(m=>m.presence.status == 'idle').size}
+:black_heart: offline:   ${message.guild.members.filter(m=>m.presence.status == 'offline').size}
+:blue_heart:   all:  ${message.guild.memberCount}**`)
+         message.channel.send({embed});
+
+    }
+  });
+
+
+
+
+
+client.on('message', message => {
+    if(message.content.includes('discord.gg')){
+                                            if(!message.channel.guild) return message.reply('** advertising me on DM ? 🤔   **');
+        if (!message.member.hasPermissions(['ADMINISTRATOR'])){
+        message.delete()
+    return message.reply(`** ممنوع نشر الروابط :angry: ! **`)
+    }
+}
+});
+
+
+
+
+client.on('message', msg => {
+  if (msg.content === 'السلام عليكم') {
+    msg.reply('**و عليكم السلام**');
+  }
+});
+
+
+
+client.on('message', message => {
+    if(message.content == prefix + 'server') {
+        var servername = message.guild.name
+        var اونر = message.guild.owner
+        var اعضاء = message.guild.memberCount
+        var ايدي = message.guild.id
+        var بلدالسيرفر = message.guild.region
+        var الرومات = message.guild.channels.size
+        var الرتب = message.guild.roles
+        var عمل = message.guild.createdAt
+        var الروم = message.guild.defaultChannel
+        var server = new Discord.RichEmbed()
+        .setThumbnail(message.guild.iconURL)
+        .addField('✔اسم السيرفر', servername)
+        .addField('🆔اي دي السيرفر ' , [ايدي])
+        .addField('💥أعضاء السيرفر', اعضاء)
+        .addField('🔱رومات السيرفر', الرومات)
+        .addField('💯روم الشات الأساسي', الروم)
+        .addField('🚩صاحب السيرفر', اونر)
+        .addField('ℹبلد السيرفر', بلدالسيرفر)
+        .addField('📐تاريخ افتتاح السيرفر', عمل)
+        .setColor('RANDOM')
+
+        message.channel.sendEmbed(server)
+    }
+});
+
+
+
+client.on('message', message => {
+    if (message.content === "Froles") {
+		if(!message.channel.guild) return;
+        var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
+        const embed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .addField('Roles:',`**[${roles}]**`)
+        message.channel.sendEmbed(embed);
+    }
+});
+
+
 
 
 client.on('message' , message => {
