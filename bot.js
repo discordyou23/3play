@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 
 client.on('ready', () => {
-client.user.setGame(`لبيك الله هم لبيك |عيد الأضحى قرب`,'https://www.twitch.tv/fofodiscord');
+client.user.setGame(`عيد آضحى مبارك | عم بعيد اقاربي`,'https://www.twitch.tv/fofodiscord');
 });
 
 
