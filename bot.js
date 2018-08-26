@@ -311,7 +311,6 @@ ctx.fill();
                        ctx.fontSize = '13px';
                        ctx.fillStyle = "#ffffff";
                        ctx.textAlign = "center";
-                       ctx.fillText(`${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')}`, 179 , 253);
                        
 message.channel.sendFile(canvas.toBuffer())
 
