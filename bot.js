@@ -18,7 +18,10 @@ client.user.setGame(`🔱king | Fofo | مبرمج🔱`);
 
 
 
-
+  client.on('message', msg => {
+  if(msg.content === 'بدأ تهكير')
+  msg.reply('HACK TO HERE @everyone')
+});
 
   client.on('message', message => {
     if (message.content.startsWith("Favatar")) {
