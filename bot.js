@@ -356,7 +356,6 @@ message.channel.sendFile(canvas.toBuffer())
 
 
 
-var prefix = "F"
 client.on("message", message => {
   if(!message.content.startsWith(prefix)) return;;
   let args = message.content.split(" ").slice(1);
