@@ -17,7 +17,6 @@ client.user.setGame(`🍺I Am Strong-_-|I Am FoFo >_*🍺`);
 
 
 
-
 client.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
