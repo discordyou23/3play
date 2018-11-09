@@ -7,13 +7,20 @@ client.on('ready', () => {
 
 
 
-client.on('ready', () => {
-client.user.setGame(`🍺I Am Strong-_-|I Am FoFo >_*🍺`);
+
+
+
+client.on('ready', () => {                           
+client.user.setGame(`🍺للمساعدة(Fhelp)-_-|I Am FoFo >_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
 
-
+client.on('message', message => {
+    if (message.content === 'Fhelp') {
+        message.reply('🍻أترك رسالة نصية يوجد بها ما تريد من مساعدة وسيتم الرد قريباااا وشكرا🍻');
+      }
+});
 
 
 
