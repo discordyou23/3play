@@ -16,12 +16,6 @@ client.user.setGame(`🍺للمساعدة(Fhelp)-_-|I Am FoFo >_*🍺`,'https://
 
 
 
-client.on('message', message => {
-    if (message.content === 'Fhelp') {
-        message.reply('🍻أترك رسالة نصية يوجد بها ما تريد من مساعدة وسيتم الرد قريباااا وشكرا🍻');
-      }
-});
-
 
 
 client.on('message', message => {
