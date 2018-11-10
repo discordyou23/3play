@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "#";
+ const prefix = "F";
 client.on('ready', () => {
   console.log('╔[══════════════════════════════════]╗');
   console.log('')
@@ -20,15 +20,9 @@ client.on('ready', () => {
 
 
 
-
-
-
-
-client.on('ready', () => {
-     client.user.setActivity("SYSTEM SERVER BOM BOT",{type: 'WATCHING'});
-
+client.on('ready', () => {                           
+client.user.setGame(`🍺Mr_FoFo🍺-(Fhelp)-`);                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
-
 
 
 
