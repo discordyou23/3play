@@ -20,8 +20,9 @@ client.on('ready', () => {
 
 
 
+
 client.on('ready', () => {                           
-client.user.setGame(`🍺Mr_FoFo🍺-(Fhelp)-`);                                                                                                                                                                                                                                                                                                                                                                                                                            
+client.user.setGame(`_Mr_FoFo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
