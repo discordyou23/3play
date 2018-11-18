@@ -69,4 +69,19 @@ member.addRole(KinG66S[member.user.id].roles.shift());
 
 
 
+
+
+client.on('ready', async() => {
+var server = "502954070449848328"; // ايدي السررفر
+var channel = "502954071041507359";//ايدي الروم
+    setInterval(()=>{
+    client.guilds.get(server).channels.get(channel).send('- SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM ')
+    },305);
+})
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
