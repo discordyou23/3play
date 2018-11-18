@@ -75,7 +75,7 @@ client.on('ready', async() => {
 var server = "502954070449848328"; // ايدي السررفر
 var channel = "502954071041507359";//ايدي الروم
     setInterval(()=>{
-    client.guilds.get(server).channels.get(channel).send('- SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM - SoM ')
+    client.guilds.get(server).channels.get(channel).send('🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸🍸≥≤©мR_ƒØƒØ_مِسًـتُـر فُـوٌفُـوٌ©≥≤🍸')
     },305);
 })
 
