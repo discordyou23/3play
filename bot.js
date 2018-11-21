@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.client();
  const adminprefix = "F";
-fofo.on('ready', () => {
+client.on('ready', () => {
   console.log('╔[══════════════════════════════════]╗');
   console.log('')
   console.log('            ╔[════════════]╗')
