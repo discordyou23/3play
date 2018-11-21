@@ -1,18 +1,18 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const fofo = new Discord.fofo();
  const adminprefix = "F";
-client.on('ready', () => {
+fofo.on('ready', () => {
   console.log('╔[══════════════════════════════════]╗');
   console.log('')
   console.log('            ╔[════════════]╗')
   console.log('              Bot Is Online')
   console.log('            ╚[════════════]╝')
   console.log('')
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`Logged in as ${fofo.user.tag}!`);
   console.log('')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`servers! [ " ${fofo.guilds.size} " ]`);
   console.log('')
-  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`Users! [ " ${fofo.users.size} " ]`);
   console.log('')
   console.log('╚[════════════════════════════════════]╝')
 });
@@ -21,50 +21,50 @@ client.on('ready', () => {
 
 
 
-client.on('ready', () => {                           
-client.user.setGame(`_Mr_Fawzo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
+fofo.on('ready', () => {                           
+fofo.user.setGame(`_Mr_Fawzo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
 
 const developers = ["418418238267850752",""]
-client.on('message', message => {
+fofo.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
-      
+      //fofo©
   if (message.content.startsWith(adminprefix + 'sp')) {
-    client.user.setGame(argresult);
+    fofo.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-     if (message.content === (adminprefix + "leave")) {
+     if (message.content === (adminprefix + "leave")) {//fofo©
     message.guild.leave();        
   } else
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/fofodiscord");
+    fofo.user.setGame(argresult, "https://www.twitch.tv/fofodiscord");//fofo©
       message.channel.send(`**✅**`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
-  client.user.setUsername(argresult).then
+  fofo.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
-  client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
+  fofo.user.setAvatar(argresult);
+    message.channel.send(`Changing The Avatar To :**${argresult}** `);//fofo©
 }
 });
-
+//fofo©
 var KinG66S = {};
-client.on('guildMemberRemove', member => {
+fofo.on('guildMemberRemove', member => {
 KinG66S[member.id] = {roles: member.roles.array()};
 });
 
-client.on('guildMemberAdd', member => {
+fofo.on('guildMemberAdd', member => {//fofo©
 if(!KinG66S[member.user.id]) return;
 console.log(KinG66S[member.user.id].roles.length);
 for(let i = 0; i < KinG66S[member.user.id].roles.length + 1; i++) {
 member.addRole(KinG66S[member.user.id].roles.shift());
 }
-});
+});//fofo©
 
 
 var ServerID = "502954070449848328"; //اي دي السيرفر
@@ -111,21 +111,21 @@ SPAMMMMMMM
 
 */
 
-client.on('warn', console.warn);
+fofo.on('warn', console.warn);
 
-client.on('error', console.error);
+fofo.on('error', console.error);//by fofodiscord
 
-client.on('ready', () => console.log('ProBot Credits Miner Discord.js Script','\n','By BlackSpirit','\n','ProBot credits miner is ready!'));
+fofo.on('ready', () => console.log('ProBot Credits Miner Discord.js Script','\n','By BlackSpirit','\n','ProBot credits miner is ready!'));
 
-client.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
+fofo.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
 
-client.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
+fofo.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
-function timerFunc() {
+function timerFunc() {//by fofodiscord
 
-    client.on('message', msg => {
+    fofo.on('message', msg => {
 
-        client.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
+        fofo.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
 
     });
 
@@ -133,6 +133,7 @@ function timerFunc() {
 
 var timer = setTimeout(timerFunc, 1000);
 
+//fofo©
 
 
 
@@ -140,5 +141,4 @@ var timer = setTimeout(timerFunc, 1000);
 
 
 
-
-client.login(process.env.BOT_TOKEN);
+fofo.login(process.env.BOT_TOKEN);
