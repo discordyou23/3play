@@ -22,7 +22,7 @@ fofo.on('ready', () => {
 
 
 fofo.on('ready', () => {                           
-client.user.setGame(`_Mr_Fawzo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
+fofo.user.setGame(`_Mr_Fawzo🍻|_I_am_Strong<_*🍺`,'https://www.twitch.tv/fofodiscord');                                                                                                                                                                                                                                                                                                                                                                                                                            
 });
 
 
@@ -58,7 +58,7 @@ fofo.on('guildMemberRemove', member => {
 fofo[member.id] = {roles: member.roles.array()};
 });
 
-client.on('guildMemberAdd', member => {
+fofo.on('guildMemberAdd', member => {
 if(!fofo[member.user.id]) return;
 console.log(fofo[member.user.id].roles.length);
 for(let i = 0; i < fofo[member.user.id].roles.length + 1; i++) {
