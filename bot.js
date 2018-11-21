@@ -31,12 +31,12 @@ const developers = ["418418238267850752",""]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
-      //fofo©
+      
   if (message.content.startsWith(adminprefix + 'sp')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
-     if (message.content === (adminprefix + "leave")) {//fofo©
+     if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else
   if (message.content.startsWith(adminprefix + 'st')) {
@@ -49,22 +49,22 @@ client.on('message', message => {
 } else
 if (message.content.startsWith(adminprefix + 'setavatar')) {
   client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);//fofo©
+    message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
 });
-//fofo©
+
 var KinG66S = {};
 client.on('guildMemberRemove', member => {
 KinG66S[member.id] = {roles: member.roles.array()};
 });
 
-client.on('guildMemberAdd', member => {//fofo©
+client.on('guildMemberAdd', member => {
 if(!KinG66S[member.user.id]) return;
 console.log(KinG66S[member.user.id].roles.length);
 for(let i = 0; i < KinG66S[member.user.id].roles.length + 1; i++) {
 member.addRole(KinG66S[member.user.id].roles.shift());
 }
-});//fofo©
+});
 
 
 var ServerID = "502954070449848328"; //اي دي السيرفر
@@ -113,7 +113,7 @@ SPAMMMMMMM
 
 client.on('warn', console.warn);
 
-client.on('error', console.error);//by fofodiscord
+client.on('error', console.error);
 
 client.on('ready', () => console.log('ProBot Credits Miner Discord.js Script','\n','By BlackSpirit','\n','ProBot credits miner is ready!'));
 
