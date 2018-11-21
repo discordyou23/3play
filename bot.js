@@ -111,10 +111,6 @@ SPAMMMMMMM
 
 */
 
-const Discord = require('discord.js');
-
-const client = new Discord.Client();
-
 client.on('warn', console.warn);
 
 client.on('error', console.error);
