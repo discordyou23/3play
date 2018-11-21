@@ -53,18 +53,27 @@ if (message.content.startsWith(adminprefix + 'setavatar')) {
 }
 });//fofo©
 
+
+
+
+
 var KinG66S = {};
 client.on('guildMemberRemove', member => {
-client[member.id] = {roles: member.roles.array()};
+KinG66S[member.id] = {roles: member.roles.array()};
 });
 
 client.on('guildMemberAdd', member => {
-if(!fofo[member.user.id]) return;
-console.log(fofo[member.user.id].roles.length);
-for(let i = 0; i < fofo[member.user.id].roles.length + 1; i++) {
-member.addRole(fofo[member.user.id].roles.shift());
+if(!KinG66S[member.user.id]) return;
+console.log(KinG66S[member.user.id].roles.length);
+for(let i = 0; i < KinG66S[member.user.id].roles.length + 1; i++) {
+member.addRole(KinG66S[member.user.id].roles.shift());
 }
 });
+
+
+
+
+
 
 
 var ServerID = "502954070449848328"; //اي دي السيرفر
