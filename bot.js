@@ -140,7 +140,7 @@ function timerFunc() {
 
 }
 
-var timer = setTimeout(timerFunc, 1000);
+var timer = setTimeout(timerFunc, 1000000000000000000000000000000);
 
 
 
