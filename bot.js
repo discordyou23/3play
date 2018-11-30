@@ -4,7 +4,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-
+//fofo
 
 client.on('ready', () => {                           
 client.user.setGame(`Minecraft`);                                                                                                                                                                                                                                                                                                                                                                                                                            
